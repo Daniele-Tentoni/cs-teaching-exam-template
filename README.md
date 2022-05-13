@@ -10,6 +10,8 @@ SPDX-License-Identifier: GPL-3.0-only
 
 Questo modello di relazione d'esame di Didattica dell'Informatica è stato utilizzato come base da Daniele Tentoni. Può essere modificato come meglio si crede seguendo la licenza GPL.
 
+Puoi vedere il risultato pubblicato [qui](https://daniele-tentoni.github.io/cs-teaching-exam-template/).
+
 ## Compilare la relazione
 
 Compila la relazione in Markdown utilizzando [pandoc](https://pandoc.org):
