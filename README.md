@@ -7,6 +7,9 @@ SPDX-License-Identifier: GPL-3.0-only
 # Modello relazione d'esame
 
 [![REUSE status](https://api.reuse.software/badge/git.fsfe.org/reuse/api)](https://api.reuse.software/info/git.fsfe.org/reuse/api)
+[![Check Reuse Compliance](https://github.com/Daniele-Tentoni/cs-teaching-exam-template/actions/workflows/lint.yml/badge.svg)](https://github.com/Daniele-Tentoni/cs-teaching-exam-template/actions/workflows/lint.yml)
+[![Produce Pandoc website](https://github.com/Daniele-Tentoni/cs-teaching-exam-template/actions/workflows/pandoc.yml/badge.svg)](https://github.com/Daniele-Tentoni/cs-teaching-exam-template/actions/workflows/pandoc.yml)
+[![pages-build-deployment](https://github.com/Daniele-Tentoni/cs-teaching-exam-template/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Daniele-Tentoni/cs-teaching-exam-template/actions/workflows/pages/pages-build-deployment)
 
 Questo modello di relazione d'esame di Didattica dell'Informatica è stato utilizzato come base da Daniele Tentoni. Può essere modificato come meglio si crede seguendo la licenza GPL.
 
