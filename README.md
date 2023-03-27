@@ -17,10 +17,19 @@ Puoi vedere il risultato pubblicato [qui](https://daniele-tentoni.github.io/cs-t
 
 **Tabella dei contenuti**:
 
+- [Come usare questo template](#come-usare-questo-template)
 - [Compilare la relazione](#compilare-la-relazione)
 - [Licenza](#licenza)
   - [Reuse](#reuse)
 - [Contribuitre](#contribuire)
+
+## Come usare questo template
+
+Cerca in tutto il repository ogni riferimento a questo repository (`cs-teaching-exam-template`) e correggilo con i riferimenti corretti al tuo nuovo repository (li trovi nei link dei status badge in questo file e nel file dep5 di REUSE).
+
+Installa Renovate se vuoi sfruttarlo ed eventualmente usa la tua configurazione nel file `.github/renovate.json`. Altrimenti, se non vuoi usare renovate, puoi cancellarlo.
+
+Prima di effettuare il deploy su Github Pages, devi abilitarle dalle impostazioni del repository. Dopodiché, funziona senza alcun altro intervento.
 
 ## Compilare la relazione
 
@@ -32,13 +41,6 @@ curl 'https://raw.githubusercontent.com/ryangrose/easy-pandoc-templates/master/h
 mkdir dist
 pandoc esame/esame.md --from=markdown --to=html --output=dist/index.html --toc --template=elegant_bootstrap_menu.html --data-dir=.pandoc
 ```
-
-Per effettuare il deploy automatico su un sito su Github Pages, hai bisogno di creare un token segreto per permettere alla Github Actions di accedere con permessi di scrittura al repository di destinazione sul branch _gh-pages_. Per fare questo, puoi seguire i seguenti passi:
-
-1. Andare nelle impostazioni del proprio profilo: `Avatar` -> `Impostazioni` -> `Opzioni Sviluppatore` -> `Personal Access Token`
-2. Creare un nuovo Personal Access Token con i diritti repo_admin **da non condividere con nessuno** (chiunque possederà questo codice potrà scrivere qualunque cosa sul vostro repository)
-3. Andare sul proprio repository appena creato, `Impostazioni` -> `Secrets` -> `Actions`
-4. Creare un nuovo segreto dal nome `GH_TOKEN`, incollare il token generato e salvare
 
 Ogni volta che verrà effettuata una push sul branch principale verrà effettuato un deploy tutto in automatico.
 
